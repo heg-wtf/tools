@@ -10,11 +10,11 @@ function App() {
   const [inputValue, setInputValue] = useState('')
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 p-8">
+    <div className="min-h-screen bg-background p-8">
       <div className="max-w-4xl mx-auto space-y-8">
         {/* 헤더 */}
         <div className="text-center space-y-4">
-          <h1 className="text-4xl font-bold text-gray-900">
+          <h1 className="text-4xl font-bold text-foreground">
             shadcn/ui + React 앱
           </h1>
           <Badge variant="secondary" className="text-lg px-4 py-2">
