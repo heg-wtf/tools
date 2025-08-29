@@ -10,16 +10,19 @@
 }
 
 .App-header {
-  @apply bg-card border border-border;
+  background-color: hsl(var(--card));
+  border: 1px solid hsl(var(--border));
   padding: 20px;
-  @apply text-card-foreground;
+  color: hsl(var(--card-foreground));
   border-radius: 8px;
   margin-bottom: 20px;
 }
 
 .card {
   padding: 2em;
-  @apply bg-card border border-border rounded-lg;
+  background-color: hsl(var(--card));
+  border: 1px solid hsl(var(--border));
+  border-radius: 0.5rem;
 }
 
 .card button {
