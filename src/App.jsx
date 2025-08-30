@@ -29,6 +29,7 @@ import Base64Encoder from './components/Base64Encoder'
 import HashGenerator from './components/HashGenerator'
 import QrCodeGenerator from './components/QrCodeGenerator'
 import ColorConverter from './components/ColorConverter'
+import FaviconGenerator from './components/FaviconGenerator'
 import './App.css'
 
 // 메뉴 아이템들
@@ -121,6 +122,11 @@ const techMenuItems = [
     title: "색상 변환기",
     icon: "🎨",
     id: "color-converter"
+  },
+  {
+    title: "Favicon 생성기",
+    icon: "🖼️",
+    id: "favicon-generator"
   }
 ]
 
@@ -265,6 +271,8 @@ function MainContent({ activeItem }) {
         return <QrCodeGenerator />
       case 'color-converter':
         return <ColorConverter />
+      case 'favicon-generator':
+        return <FaviconGenerator />
       default:
         return (
           <main className="flex-1 p-8" role="main">
