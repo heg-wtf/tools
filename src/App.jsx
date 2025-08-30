@@ -206,7 +206,7 @@ function AppSidebar({ activeItem, setActiveItem }) {
         </SidebarGroup>
 
         <SidebarGroup>
-          <SidebarGroupLabel>개발 도구</SidebarGroupLabel>
+          <SidebarGroupLabel>프로그래밍 도구</SidebarGroupLabel>
           <SidebarGroupContent>
             <SidebarMenu role="list">
               {techMenuItems.map((item) => (
@@ -270,14 +270,14 @@ function MainContent({ activeItem }) {
           <main className="flex-1 p-8" role="main">
             <div className="max-w-4xl mx-auto">
               <header className="mb-8">
-                <h1 className="text-3xl font-bold mb-2">개발자 도구 모음</h1>
+                <h1 className="text-3xl font-bold mb-2">유용한 도구 모음</h1>
                 <p className="text-muted-foreground mb-4">
-                  개발자를 위한 필수 온라인 도구 모음. 다양한 유용한 도구들을 무료로 사용해보세요.
+                  필수 온라인 도구 모음. 다양한 유용한 도구들을 무료로 사용해보세요.
                 </p>
                 <nav aria-label="도구 카테고리">
                   <div className="flex flex-wrap gap-2">
                     <span className="inline-flex items-center rounded-full bg-blue-50 px-2 py-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-700/10">
-                      💻 개발 도구
+                      💻 프로그래밍 도구
                     </span>
                     <span className="inline-flex items-center rounded-full bg-green-50 px-2 py-1 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-700/10">
                       💰 금융 계산기
@@ -299,7 +299,7 @@ function MainContent({ activeItem }) {
                 </p>
                 <div className="mt-4 grid grid-cols-2 md:grid-cols-4 gap-4 text-sm text-muted-foreground">
                   <div>
-                    <strong>개발 도구</strong>
+                    <strong>프로그래밍 도구</strong>
                     <br />UUID, JSON, Base64 등
                   </div>
                   <div>
@@ -336,7 +336,7 @@ function App() {
           <header className="flex items-center gap-2 p-4 border-b" role="banner">
             <SidebarTrigger aria-label="사이드바 토글" />
             <Separator orientation="vertical" className="h-4" />
-            <h1 className="font-semibold">개발자 도구 대시보드</h1>
+            <h1 className="font-semibold">Tools Dashboard</h1>
           </header>
           <MainContent activeItem={activeItem} />
         </main>
