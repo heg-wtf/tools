@@ -153,7 +153,7 @@ function AppSidebar({ activeItem, setActiveItem }) {
           </div>
           <div className="grid flex-1 text-left text-sm leading-tight">
             <span className="truncate font-semibold">Tools</span>
-            <span className="truncate text-xs text-muted-foreground">개발자 도구 모음</span>
+            <span className="truncate text-xs text-muted-foreground">v1.0.0</span>
           </div>
         </SidebarMenuButton>
       </SidebarHeader>
