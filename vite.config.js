@@ -5,7 +5,7 @@ import path from 'path'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/tools/', // GitHub Pages용 base path 설정
+  base: '/', // 커스텀 도메인용 base path 설정
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
