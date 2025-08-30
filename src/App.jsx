@@ -143,15 +143,19 @@ function AppSidebar({ activeItem, setActiveItem }) {
   return (
     <Sidebar role="navigation" aria-label="도구 메뉴">
       <SidebarHeader>
-        <div className="flex items-center gap-2 px-2 py-2">
+        <SidebarMenuButton
+          onClick={() => setActiveItem("default")}
+          className="flex items-center gap-2 px-2 py-2 w-full hover:bg-sidebar-accent hover:text-sidebar-accent-foreground rounded-lg transition-colors cursor-pointer"
+          isActive={activeItem === "default"}
+        >
           <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-primary-foreground" aria-hidden="true">
             🛠️
           </div>
           <div className="grid flex-1 text-left text-sm leading-tight">
-            <span className="truncate font-semibold">개발자 도구 모음</span>
-            <span className="truncate text-xs text-muted-foreground">v1.0.0</span>
+            <span className="truncate font-semibold">Tools</span>
+            <span className="truncate text-xs text-muted-foreground">개발자 도구 모음</span>
           </div>
-        </div>
+        </SidebarMenuButton>
       </SidebarHeader>
       
       <SidebarContent>
