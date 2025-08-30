@@ -5,6 +5,7 @@ import path from 'path'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
+  base: '/tools/', // GitHub Pages용 base path 설정
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
@@ -13,5 +14,15 @@ export default defineConfig({
   server: {
     port: 3000,
     open: true
+  },
+  build: {
+    outDir: 'docs', // 빌드 결과를 docs 폴더로 출력
+    assetsDir: 'assets',
+    sourcemap: false,
+    rollupOptions: {
+      output: {
+        manualChunks: undefined,
+      },
+    },
   }
 })
