@@ -25,6 +25,7 @@ import InvestmentReturnCalculator from './components/InvestmentReturnCalculator'
 import CurrencyConverter from './components/CurrencyConverter'
 import TaxCalculator from './components/TaxCalculator'
 import JsonFormatter from './components/JsonFormatter'
+import SqlFormatter from './components/SqlFormatter'
 import Base64Encoder from './components/Base64Encoder'
 import HashGenerator from './components/HashGenerator'
 import QrCodeGenerator from './components/QrCodeGenerator'
@@ -102,6 +103,11 @@ const techMenuItems = [
     title: "JSON 포맷터",
     icon: "📝",
     id: "json-formatter"
+  },
+  {
+    title: "SQL 포맷터",
+    icon: "🗃️",
+    id: "sql-formatter"
   },
   {
     title: "Base64 인코더/디코더",
@@ -263,6 +269,8 @@ function MainContent({ activeItem }) {
         return <UnixTimestamp />
       case 'json-formatter':
         return <JsonFormatter />
+      case 'sql-formatter':
+        return <SqlFormatter />
       case 'base64-encoder':
         return <Base64Encoder />
       case 'hash-generator':
